@@ -1,0 +1,13 @@
+ul.list{
+    list-style-type: none;
+    overflow:hidden
+}
+
+
+
+ul.list>li{
+    display:inline
+}
+p{
+    font-size:small;
+}

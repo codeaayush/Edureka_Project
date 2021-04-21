@@ -1,0 +1,59 @@
+<div class="container">
+    <h2>Data Of Buses</h2>
+
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>leavingFrom</th>
+                <th>goingTo</th>
+                <th>Departure Time</th>
+                <th>bus busName</th>
+                <th>coach</th>
+                <th>Seats</th>
+                <th>Fares</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of filteredBusData">
+
+                <td>
+                    {{data.leavingFrom}}
+                </td>
+                <td>
+                    {{data.goingTo}}
+                </td>
+                <td>
+                    {{data.departureTime}}
+                </td>
+                <td>
+                    {{data.busName}}
+                </td>
+                <td>
+                    {{data.coach}}
+                </td>
+                <td>
+                    {{data.seats}}
+                </td>
+                <td>
+                    {{data.fare}}
+                </td>
+                <td>
+
+
+                    <ul class="list-inline m-0">
+
+                        <li class="list-inline-item">
+                            <button (click)="view(data.fare,data.coach,data.departureTime,data.busName)" type="button"
+                                class="btn btn-secondary">VIEW
+                                SEATS</button>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>

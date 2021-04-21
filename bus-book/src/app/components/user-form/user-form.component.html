@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="card SubmitForm m-auto">
+        <div class="card-header">Passenger Information Page</div>
+        <div class="card-body">
+            <form (ngSubmit)='loginUser()' [formGroup]='loginForm' novalidate class="form">
+
+                <div class="form-row row">
+                    <input formControlName='userName' type="text" class="form-control" placeholder="Enter User Name" />
+                    <div *ngIf="submitted && f.userName.errors && f.userName.errors.required" class="text-danger">User
+                        Name
+                        is
+                        Required
+                    </div>
+                    <div *ngIf="submitted && f.userName.errors && f.userName.errors.minlength" class="text-danger">User
+                        Name
+                        is
+                        minimum
+                    </div>
+                </div>
+                <br />
+
+                <div class="form-row row">
+                    <input formControlName='email' type="text" class="form-control" placeholder="Enter Email" />
+                    <div *ngIf="submitted && f.email.errors && f.email.errors.required" class="text-danger">email is
+                        Required
+                    </div>
+                </div>
+                <br />
+                <div class="form-row row">
+                    <input formControlName='mobileNo' type="number" class="form-control"
+                        placeholder="Enter Mobile No." />
+                    <div *ngIf="submitted && f.mobileNo.errors && f.mobileNo.errors.required" class="text-danger">
+                        mobileNo
+                        is
+                        Required
+                    </div>
+                </div>
+                <br />
+                <div class="text-center">
+                    <button class="btn btn-primary " type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
