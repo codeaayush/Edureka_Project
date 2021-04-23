@@ -18,6 +18,8 @@ export class BusSeatComponent implements OnInit {
   totalFare: number;
   val: boolean = false;
   class: string = 'Economy';
+  flag_seat: boolean = false;
+
 
   constructor(private router: Router, private _selectSeatService: SelectSeatService) {
     this.totalFare = 0;
@@ -33,6 +35,7 @@ export class BusSeatComponent implements OnInit {
     this.coach = this._selectSeatService.getCoach();
     this.count += 1;
     var seat = document.getElementById(seatId);
+    console.log(seat);
     var image1 = `<img src="../assets/img/bookseat.png">`;
     var image2 = `<img src="../assets/img/bseat.png">`;
 
@@ -76,7 +79,13 @@ export class BusSeatComponent implements OnInit {
         }
         console.log(this.seatIDs);
 
-        //this.totalFares(this.fare);
+        if (this.count > 0) {
+          this.flag_seat = true;
+        }
+        else {
+          this.flag_seat = false;
+        }
+
       }
     }
     else {

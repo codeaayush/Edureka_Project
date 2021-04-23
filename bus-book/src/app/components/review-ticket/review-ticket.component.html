@@ -1,41 +1,50 @@
-<div class="container">
-    <br />
+<div class="form-row row">
+    <div class="form-group col-8">
 
-    <div class="card" style="width: 38rem; float:right;  margin-right: 0px;
-        margin-left: auto; display: inline-table;">
-        <div class="card-header">
-            Journey Details
-        </div>
+        <img src="https://www.mercedes-benz.com/en/design/vehicles/future-bus-revolutionary-design/_jcr_content/root/slider_mb_topimage_0/sliderchilditems/slideritem_0/image/MQ7-0-image-20191129122609/00-mercedes-benz-future-bus-revolutionary-design-3400x1440.jpeg"
+            class="img1" alt="cinque terre">
 
-        <table class="card-table table">
-            <thead>
-                <tr>
-                    <th scope="col">
-                        <h4>{{leave}} To {{going}}</h4>
-                    </th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Day & Time : {{date}} : {{time}}</td>
-                </tr>
-                <tr>
-                    <td>{{busName}}</td>
-                </tr>
-                <tr>
-                    <td>Coach Type:{{coach}}</td>
-                </tr>
-                <tr>
-                    <td>Seat No ({{seatInfo}})</td>
-                </tr>
-
-
-            </tbody>
-        </table>
-
-        <div class="text-center">
-            <button (click)="confirm()" type="button" class="btn btn-primary">Confirm</button>
-        </div>
-        <br />
     </div>
+
+
+    <div class="form-group col-4">
+
+        <div class="card">
+            <div class="card-header">
+                Journey Details
+            </div>
+
+            <table class="card-table table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <h4 class="text">{{leave}} To {{going}}</h4>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Day & Time : {{date}} : {{time}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{busName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Coach Type:{{coach}}</td>
+                    </tr>
+                    <tr>
+                        <td>Seat No <span class="text">({{seatInfo}})</span> </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+            <div class="text-center">
+                <button (click)="confirm()" type="button" class="btn btn-primary">Confirm</button>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>

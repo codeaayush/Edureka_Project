@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class BusSearchResultComponent implements OnInit {
   bus: any;
+  flag: number = 0;
   filteredBusData: any = [];
   leave: string = '';
   going: string = '';
@@ -25,6 +26,7 @@ export class BusSearchResultComponent implements OnInit {
 
   ngOnInit(): void {
     this.refreshBuses();
+    // this.checkFilter();
   }
   refreshBuses() {
     this._selectBusService.getBus().subscribe(data => {
@@ -32,13 +34,24 @@ export class BusSearchResultComponent implements OnInit {
       // logic to filter buses 
       this.leave = this._busSelectService.getLeave();
       this.going = this._busSelectService.getGoing();
-      console.log(this.leave, this.going);
+      //console.log(this.leave, this.going);
       this.filteredBusData = this.bus
         .filter((i: any) => i.leavingFrom === this.leave)
         .filter((j: any) => j.goingTo === this.going);
+        this.flag=this.filteredBusData.length
     })
     console.log(" the details of bus", this.filteredBusData);
   }
+
+  // checkFilter() {
+  //   console.log(this.filteredBusData.length);
+  //   if (this.filteredBusData.length > 0) {
+  //     this.flag = true;
+  //   }
+  //   else {
+  //     this.flag = false;
+  //   }
+  // }
 
   getData() {
     this.leave = this._busSelectService.getLeave();

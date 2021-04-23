@@ -1,9 +1,14 @@
 .footer {
-    position: relative;
+    position:relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: red;
     color: white;
     text-align: center;
+ }
+ .text-bus{
+     font-style: italic;
+     font-weight:bold;
+     
  }

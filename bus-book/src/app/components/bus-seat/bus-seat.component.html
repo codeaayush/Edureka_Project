@@ -1,7 +1,9 @@
 <div class="container">
     <br />
-
-    <div class="card" style="width: 38rem; float:right;  margin-right: 0px;
+    <div *ngIf="!flag_seat" class="alert alert-danger message1" style="width: 38rem; float:right;">
+        Kindly Select The Seat
+    </div>
+    <div *ngIf=" flag_seat" class="card" style="width: 38rem; float:right;  margin-right: 0px;
         margin-left: auto; display: inline-table;">
         <div class="card-header">
             Seat Slected Details
@@ -18,24 +20,25 @@
             <tbody>
                 <tr *ngFor="let se of seatIDs">
                     <td>{{se}}</td>
-                    <td>{{fare}}</td>
+                    <td>{{fare | currency:'INR'}}</td>
                     <td>{{class}}</td>
                 </tr>
 
 
             </tbody>
         </table>
-        <h6>Total Amount:{{totalFare}}</h6>
+        <h6 class="text">Total Amount:{{totalFare | currency:'INR'}}</h6>
         <div class="text-center">
             <button (click)="confirmSeat()" type="button" class="btn btn-primary">Confirm</button>
         </div>
         <br />
     </div>
 
-    <p class="alert alert-danger" style=" width: 30rem;">Click on an Available seat to proceed with your transaction.
+    <p class="alert alert-warning message" style=" width: 30rem;">Click on an Available seat to proceed with your
+        transaction.
     </p>
 
-    <div *ngIf="flag" class="alert alert-danger ">You can buy only 6 seats in one time </div>
+    <h6 *ngIf="flag" class="alert alert-danger" style=" width: 30rem;">You can buy only book 6 seats in one time </h6>
 
     <div class=" card" style="width: 30rem;">
         <div class="card-body">
@@ -166,7 +169,7 @@
         <div class="card-body">
             <h2 class="card-title">Seat Selection</h2>
 
-            <h4 class="card-text">Upeer Deck</h4>
+            <h4 class="card-text">Upper Deck</h4>
             <br />
             <div class="seats">
 

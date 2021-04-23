@@ -18,6 +18,8 @@ import { ReviewTicketComponent } from './components/review-ticket/review-ticket.
 import { ViewTicketComponent } from './components/view-ticket/view-ticket.component';
 import { UserInfoService } from "./services/user-info.service";
 import { SelectSeatService } from "./services/select-seat.service";
+import { StyleDirective } from './directives/style.directive';
+import { WildcardComponent } from './components/wildcard/wildcard.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SelectSeatService } from "./services/select-seat.service";
     BusSeatComponent,
     UserFormComponent,
     ReviewTicketComponent,
-    ViewTicketComponent
+    ViewTicketComponent,
+    StyleDirective,
+    WildcardComponent
   ],
   imports: [
     BrowserModule,

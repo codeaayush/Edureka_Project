@@ -19,7 +19,7 @@ export class ViewTicketComponent implements OnInit {
   going: string = '';
   totalFare: number = 0;
   date: string = '';
-  ticketId: any;
+  ticketId: string = "FI45OCS0";
   userName: string = '';
   email: string = '';
   mobileNo: number = 0;
@@ -43,7 +43,7 @@ export class ViewTicketComponent implements OnInit {
     this.userName = this._userInfoService.getUserName();
     this.email = this._userInfoService.getUserEmail();
     this.mobileNo = this._userInfoService.getUserMobile();
-    this.ticketId = Math.floor(Math.random());
+    //this.ticketId = Math.floor(Math.random());
     console.log(this.ticketId);
   }
 

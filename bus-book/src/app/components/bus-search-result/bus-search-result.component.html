@@ -1,21 +1,21 @@
 <div class="container">
-    <h2>Data Of Buses</h2>
+    <h2 class="txt" *ngIf="flag">Data Of Buses</h2>
 
-    <table class="table table-dark table-striped">
+    <table *ngIf="flag" class="table table-dark table-striped">
         <thead>
             <tr>
-                <th>leavingFrom</th>
-                <th>goingTo</th>
-                <th>Departure Time</th>
-                <th>bus busName</th>
-                <th>coach</th>
-                <th>Seats</th>
-                <th>Fares</th>
-                <th>Actions</th>
+                <th>LEAVING FROM</th>
+                <th>GOING TO</th>
+                <th>DEPARTURE TIME</th>
+                <th>BUS NAME</th>
+                <th>COACH</th>
+                <th>SEATS</th>
+                <th>FARES</th>
+                <th>ACTIONS</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let data of filteredBusData">
+            <tr *ngFor="let data of filteredBusData" appStyle>
 
                 <td>
                     {{data.leavingFrom}}
@@ -36,19 +36,15 @@
                     {{data.seats}}
                 </td>
                 <td>
-                    {{data.fare}}
+                    {{data.fare | currency:'INR'}}
                 </td>
                 <td>
-
-
                     <ul class="list-inline m-0">
 
                         <li class="list-inline-item">
                             <button (click)="view(data.fare,data.coach,data.departureTime,data.busName)" type="button"
-                                class="btn btn-secondary">VIEW
-                                SEATS</button>
+                                class="btn btn-info">VIEW SEATS</button>
                         </li>
-
                     </ul>
                 </td>
             </tr>
@@ -56,4 +52,10 @@
         </tbody>
     </table>
 
+</div>
+
+
+<div *ngIf="!flag">
+    <h2 class="txt">No Bus Found</h2>
+    <img class="img" src="https://image.shutterstock.com/image-vector/bus-isolated-260nw-541717828.jpg" alt="">
 </div>

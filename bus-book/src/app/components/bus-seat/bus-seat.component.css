@@ -3,11 +3,31 @@ ul.list{
     overflow:hidden
 }
 
-
-
 ul.list>li{
     display:inline
 }
+
 p{
     font-size:small;
+}
+
+.message{
+    background-color: rgb(238, 238, 238);
+    font-size: 15px;
+    font-style: italic;
+}
+.message1{
+    font-style:italic;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: rgb(238, 238, 238);
+}
+.card-header{
+    background-color: #1e2bdf;
+    font-size: 20px;
+    font-style: oblique;
+}
+.text{
+    margin-left: 10px;
+    font-size: larger;
 }

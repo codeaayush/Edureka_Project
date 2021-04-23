@@ -17,7 +17,7 @@ export class SearchBusesComponent implements OnInit {
   going: string;
   data = {};
   date: string = "";
-
+  mindate = new Date();
 
 
   searchForm: FormGroup = this.formBuilder.group({});

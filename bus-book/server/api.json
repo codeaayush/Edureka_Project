@@ -6,7 +6,7 @@
             "goingTo": "Haryana",
             "departureTime": "10:00 pm",
             "busName": "Jaipur Jet",
-            "coach": "AC",
+            "coach": "Non AC",
             "seats": 36,
             "fare": 400
         },
@@ -14,7 +14,7 @@
             "id": 2,
             "leavingFrom": "Jaipur",
             "goingTo": "Haryana",
-            "departureTime": "10:00 pm",
+            "departureTime": "04:00 pm",
             "busName": "Jaipur Exclusive",
             "coach": "AC",
             "seats": 36,
@@ -22,6 +22,16 @@
         },
         {
             "id": 3,
+            "leavingFrom": "Jaipur",
+            "goingTo": "Mumbai",
+            "departureTime": "09:00 pm",
+            "busName": "Jaipur Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 450
+        },
+        {
+            "id": 5,
             "leavingFrom": "Mumbai",
             "goingTo": "Ahmedabad",
             "departureTime": "10:00 pm",
@@ -39,6 +49,196 @@
             "coach": "AC",
             "seats": 36,
             "fare": 1000
+        },
+        {
+            "id": 6,
+            "leavingFrom": "Jaipur",
+            "goingTo": "Ahemdabad",
+            "departureTime": "05:00 pm",
+            "busName": "Jaipur Express",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 300
+        },
+        {
+            "id": 7,
+            "leavingFrom": "Jaipur",
+            "goingTo": "Pune",
+            "departureTime": "12:00 pm",
+            "busName": "Jaipur Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 1000
+        },
+        {
+            "id": 8,
+            "leavingFrom": "Haryana",
+            "goingTo": "Jaipur",
+            "departureTime": "9:00 am",
+            "busName": "Jaipur Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 550
+        },
+        {
+            "id": 9,
+            "leavingFrom": "Haryana",
+            "goingTo": "Mumbai",
+            "departureTime": "10:00 pm",
+            "busName": "Haryana Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 10,
+            "leavingFrom": "Haryana",
+            "goingTo": "pune",
+            "departureTime": "10:00 pm",
+            "busName": "Haryana Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 11,
+            "leavingFrom": "Haryana",
+            "goingTo": "Ahemdabad",
+            "departureTime": "10:00 pm",
+            "busName": "Haryana Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 12,
+            "leavingFrom": "Mumbai",
+            "goingTo": "Jaipur",
+            "departureTime": "10:00 pm",
+            "busName": "Mumbai Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 13,
+            "leavingFrom": "Mumbai",
+            "goingTo": "Haryana",
+            "departureTime": "10:00 pm",
+            "busName": "Mumbai Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 14,
+            "leavingFrom": "Mumbai",
+            "goingTo": "Pune",
+            "departureTime": "10:00 pm",
+            "busName": "Mumbai Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 15,
+            "leavingFrom": "Mumbai",
+            "goingTo": "Ahemdabad",
+            "departureTime": "10:00 pm",
+            "busName": "Mumbai Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 16,
+            "leavingFrom": "Ahemdabad",
+            "goingTo": "Jaipur",
+            "departureTime": "10:00 pm",
+            "busName": "Ahemdabad Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 17,
+            "leavingFrom": "Ahemdabad",
+            "goingTo": "Mumbai",
+            "departureTime": "10:00 pm",
+            "busName": "Ahemdabad Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 18,
+            "leavingFrom": "Ahemdabad",
+            "goingTo": "Pune",
+            "departureTime": "10:00 pm",
+            "busName": "Ahemdabad Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 19,
+            "leavingFrom": "Ahemdabad",
+            "goingTo": "Haryana",
+            "departureTime": "10:00 pm",
+            "busName": "Ahemdabad Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 20,
+            "leavingFrom": "Pune",
+            "goingTo": "Jaipur",
+            "departureTime": "10:00 pm",
+            "busName": "Pune Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id": 21,
+            "leavingFrom": "Pune",
+            "goingTo": "Mumbai",
+            "departureTime": "10:00 pm",
+            "busName": "Pune Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 400
+        },
+        {
+            "id":22,
+            "leavingFrom": "Pune",
+            "goingTo": "Ahemdabad",
+            "departureTime": "10:00 pm",
+            "busName": "Pune Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 700
+        },
+        {
+            "id": 23,
+            "leavingFrom": "Pune",
+            "goingTo": "Haryana",
+            "departureTime": "10:00 pm",
+            "busName": "Pune Jet",
+            "coach": "AC",
+            "seats": 36,
+            "fare": 1200
+        },
+        {
+            "id": 24,
+            "leavingFrom": "Pune",
+            "goingTo": "Mumbai",
+            "departureTime": "01:00 pm",
+            "busName": "Pune Jet",
+            "coach": "Non AC",
+            "seats": 36,
+            "fare": 600
         }
     ],
     "cities": [

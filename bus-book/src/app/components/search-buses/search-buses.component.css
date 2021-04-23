@@ -1,7 +1,25 @@
 .img1{      
     height: 500px;      
-    width: 850px;           
+    width: 860px;           
 } 
 #form{
     height: 500px;
+  
+}
+.leave{
+    margin-top: 25px;
+}
+
+.search{
+    font-size: 20px;
+    font-weight:600;
+    background-color: rgb(193 213 212 / 83%);
+    outline-style: none;
+
+}
+.form1{
+    background-color: rgb(217 225 229);
+}
+.card{
+    border:none;
 }

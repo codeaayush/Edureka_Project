@@ -1,0 +1,21 @@
+/* .SubmitForm{
+    margin: 50px 400px;
+
+} */
+/* .img {
+    background: rgba(30, 52, 172, 0.603)
+  } */
+.back-div{
+    margin:0px;
+    height: 100vh;
+}
+.card-header{
+    background-color: #8a8a94;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+.card-body{
+    background: #d2d1cc;
+}

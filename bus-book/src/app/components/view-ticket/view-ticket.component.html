@@ -1,53 +1,62 @@
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-10 ticket ">
-            <h6 class="text-center pt-3 pb-3 "> Online Reservation </h6>
-            <table class="table ">
-                <thead>
-                    <td class="text-capitalize">{{leave}} {{going}}</td>
-                    <td>{{date}}</td>
-                </thead>
-            </table>
-            <table class="table ps_details">
-                <tr>
-                    <th>Passenger Details</th>
-                    <th>Ticket Id</th>
-                    <th>Seat No</th>
-                    <th>Total Fare</th>
+    <br />
+    <div class="card">
+        <div class="row justify-content-center">
+            <div class="col-md-10 ticket ">
+                <h6 class="text-center pt-3 pb-3 "> Online Reservation </h6>
+                <table class="table ">
+                    <thead>
+                        <td class="text-capitalize text">{{leave}} {{going}}</td>
+                        <td class="text">{{date}}</td>
+                    </thead>
+                </table>
+                <div class="card">
+                    <table class="table ps_details">
+                        <tr>
+                            <th>Passenger Details</th>
+                            <th>Ticket Id</th>
+                            <th>Seat No</th>
+                            <th>Total Fare</th>
 
-                </tr>
-                <tr>
-                    <td><b>{{userName}}</b> <br>
-                        <span>{{email}}</span> <br>
-                        <span>{{mobileNo}}</span>
-                    </td>
+                        </tr>
+                        <tr>
+                            <td><b>{{userName}}</b> <br>
+                                <span>{{email}}</span> <br>
+                                <span>{{mobileNo}}</span>
+                            </td>
 
-                    <td>TicketId</td>
-                    <td>
-                        <span>{{seatId}}</span>
-                    </td>
-                    <td>{{totalFare}} </td>
-                </tr>
-            </table>
-            <table class=" table ps_details ">
-                <tr>
-                    <th>Bus Name</th>
-                    <th>Reporting Time </th>
-                    <th>Departure Time</th>
+                            <td>{{ticketId}}</td>
+                            <td>
+                                <span>{{seatId}}</span>
+                            </td>
+                            <td>{{totalFare | currency:'INR'}} </td>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+                <br />
+                <div class="card">
+                    <table class=" table ps_details ">
+                        <tr>
+                            <th>Bus Name</th>
+                            <th>Reporting Time </th>
+                            <th>Departure Time</th>
 
-                </tr>
-                <tr>
-                    <td>{{busName}} <br>
-                        <span> <em>Coach Type: </em>{{coach}} </span>
-                    </td>
-                    <td>Before 30 minutes</td>
-                    <td>{{time}}</td>
-                </tr>
-            </table>
-        </div>
-        <div class=" row">
-            <p style="color:red">** Please Bring this copy to ticket counter for collect your ticket
-            </p>
+                        </tr>
+                        <tr>
+                            <td>{{busName}} <br>
+                                <span> <em>Coach Type: </em>{{coach}} </span>
+                            </td>
+                            <td>Before 30 minutes</td>
+                            <td>{{time}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class=" row">
+                <p style="color:red">** Please Bring this copy to ticket counter for collect your ticket
+                </p>
+            </div>
         </div>
     </div>
 </div>

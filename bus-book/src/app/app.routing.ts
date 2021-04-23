@@ -7,6 +7,7 @@ import { ReviewTicketComponent } from './components/review-ticket/review-ticket.
 import { SearchBusesComponent } from './components/search-buses/search-buses.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { ViewTicketComponent } from './components/view-ticket/view-ticket.component';
+import { WildcardComponent } from './components/wildcard/wildcard.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
     { path: "seatSearch", component: BusSeatComponent },
     { path: "confirm", component: UserFormComponent },
     { path: "submit", component: ReviewTicketComponent },
-    { path: "confirmData", component: ViewTicketComponent }
+    { path: "confirmData", component: ViewTicketComponent },
+    { path: "**", component: WildcardComponent }
 
 ];
 

@@ -1,0 +1,17 @@
+.img{
+    height:300px;
+    width:350px;
+    margin-top: auto;
+    margin-left: 500px;
+}
+.txt{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    font-display:unset;
+    margin-top: 50px;
+}
+.table{
+    margin-top:40px;
+}
